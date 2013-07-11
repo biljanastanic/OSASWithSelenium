@@ -1,0 +1,38 @@
+<html t:type="Template" title="Detail User"
+	xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd" xmlns:p="tapestry:parameter"
+	xmlns:j="tapestry-library:jquery">
+
+
+	<div class="grid_9">
+		<div class="widget minimizable">
+			<header>
+				<div class="icon">
+					<span class="icon" data-icon="clipboard-task"></span>
+				</div>
+				<div class="title">
+					<h2>Details</h2>
+				</div>
+			</header>
+			<div class="content">
+				<!-- <t:beandisplay object="user"> </t:beandisplay> -->
+
+				<table class="table" border="1">
+					<thead>
+						<tr>
+							<th>UserName</th>
+							<th>Email</th>
+							<th>Role</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr t:type="Loop" t:source="user" t:value="user">
+							<td>${user.username}</td>
+							<td>${user.email}</td>
+							<td>${user.role}</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</html>

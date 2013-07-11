@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="49175" started-at="2013-07-09T10:01:47Z" finished-at="2013-07-09T10:02:36Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="49175" started-at="2013-07-09T10:01:47Z" finished-at="2013-07-09T10:02:36Z">
+      <class name="selenium.SeleniumTest">
+        <test-method status="PASS" signature="attachScreenshotListener(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:selenium.SeleniumTest@14e1705]" name="attachScreenshotListener" is-config="true" duration-ms="143" started-at="2013-07-09T12:01:47Z" finished-at="2013-07-09T12:01:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[localhost]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4444]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@aee392]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- attachScreenshotListener -->
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:selenium.SeleniumTest@14e1705]" name="setUp" is-config="true" duration-ms="13573" started-at="2013-07-09T12:01:47Z" finished-at="2013-07-09T12:02:00Z">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="getSelenium(boolean)[pri:0, instance:selenium.SeleniumTest@14e1705]" name="getSelenium" is-config="true" duration-ms="1" started-at="2013-07-09T12:02:00Z" finished-at="2013-07-09T12:02:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSelenium -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:selenium.SeleniumTest@14e1705]" name="setUp" is-config="true" duration-ms="22304" started-at="2013-07-09T12:02:00Z" finished-at="2013-07-09T12:02:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setTestContext(java.lang.reflect.Method)[pri:0, instance:selenium.SeleniumTest@14e1705]" name="setTestContext" is-config="true" duration-ms="36" started-at="2013-07-09T12:02:23Z" finished-at="2013-07-09T12:02:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void selenium.SeleniumTest.testT() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setTestContext -->
+        <test-method status="PASS" signature="testT()[pri:0, instance:selenium.SeleniumTest@14e1705]" name="testT" duration-ms="12868" started-at="2013-07-09T12:02:23Z" finished-at="2013-07-09T12:02:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testT -->
+        <test-method status="PASS" signature="checkForVerificationErrors()[pri:0, instance:selenium.SeleniumTest@14e1705]" name="checkForVerificationErrors" is-config="true" duration-ms="1" started-at="2013-07-09T12:02:36Z" finished-at="2013-07-09T12:02:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkForVerificationErrors -->
+        <test-method status="PASS" signature="selectDefaultWindow()[pri:0, instance:selenium.SeleniumTest@14e1705]" name="selectDefaultWindow" is-config="true" duration-ms="36" started-at="2013-07-09T12:02:36Z" finished-at="2013-07-09T12:02:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectDefaultWindow -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:selenium.SeleniumTest@14e1705]" name="tearDown" is-config="true" duration-ms="304" started-at="2013-07-09T12:02:36Z" finished-at="2013-07-09T12:02:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- selenium.SeleniumTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

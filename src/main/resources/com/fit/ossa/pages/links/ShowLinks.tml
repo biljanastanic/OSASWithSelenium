@@ -1,0 +1,66 @@
+<html t:type="Template" title="Show Universities"
+	xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd" xmlns:p="tapestry:parameter"
+	xmlns:j="tapestry-library:jquery">
+
+
+	<div class="grid_12">
+		<div class="widget minimizable">
+			<header>
+				<div class="icon">
+					<span class="icon" data-icon="clipboard-task"></span>
+				</div>
+				<div class="title">
+					<h2>Manage Links</h2>
+				</div>
+			</header>
+			<div class="content">
+				<div class="dataTables_filter" id="DataTables_Table_0_filter">
+				</div>
+				<table class="datatable dataTable" id="DataTables_Table_0"
+					aria-describedby="DataTables_Table_0_info" border="1">
+					<thead>
+						<tr>
+							<th>University name</th>
+							<th>Faculty name</th>
+							<th>Programme name</th>
+							<th>Details</th>
+							<th>Delete</th>
+							<th>Edit</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr t:type="Loop" t:source="enrolls" t:value="enrollUFP">
+							<td>${enrollUFP.university.name}</td>
+							<td>${enrollUFP.faculty.name}</td>
+							<td>${enrollUFP.programme.name}</td>
+
+							<td>
+								<t:pagelink page="links/DetailLinks" context="enrollUFP.id">
+									<center>
+										<img src="${context:template/images/info.png}" alt="Info" />
+									</center>
+								</t:pagelink>
+							</td>
+							<td>
+								<t:actionlink t:id="deleteLink" context="enrollUFP.id"
+									onclick="return confirm('Are you sure you want to delete this record?')">
+									<center>
+										<img src="${context:template/images/trash.png}" alt="Trash" />
+									</center>
+								</t:actionlink>
+							</td>
+							<td>
+								<t:pagelink page="links/EditLinks" context="enrollUFP.id">
+									<center>
+										<img src="${context:template/images/user_edit.png}" alt="Edit" />
+									</center>
+								</t:pagelink>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+
+</html>

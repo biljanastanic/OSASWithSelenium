@@ -1,0 +1,62 @@
+<html t:type="Template" title="Show Users"
+	xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd" xmlns:p="tapestry:parameter"
+	xmlns:j="tapestry-library:jquery">
+
+
+	<div class="grid_12">
+		<div class="widget minimizable">
+			<header>
+				<div class="icon">
+					<span class="icon" data-icon="clipboard-task"></span>
+				</div>
+				<div class="title">
+					<h2>Manage Users</h2>
+				</div>
+			</header>
+			<div class="content">
+				<table class="table" border="1">
+					<thead>
+						<tr>
+							<th>UserName</th>
+							<th>Email</th>
+							<th>Role</th>
+							<th>Details</th>
+							<th>Delete</th>
+							<th>Edit</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr t:type="Loop" t:source="users" t:value="user">
+							<td>${user.username}</td>
+							<td>${user.email}</td>
+							<td>${user.role}</td>
+							<td>
+								<t:pagelink page="user/DetailUser" context="user.id">
+									<center>
+										<img src="${context:template/images/info.png}" alt="Info" />
+									</center>
+								</t:pagelink>
+							</td>
+							<td>
+								<t:actionlink t:id="deleteLink" context="user.id"
+									onclick="return confirm('Are you sure you want to delete this record?')">
+									<center>
+										<img src="${context:template/images/trash.png}" alt="Trash" />
+									</center>
+								</t:actionlink>
+							</td>
+							<td>
+								<t:pagelink page="user/EditUser" context="user.id">
+									<center>
+										<img src="${context:template/images/user_edit.png}" alt="Edit" />
+									</center>
+								</t:pagelink>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+
+</html>

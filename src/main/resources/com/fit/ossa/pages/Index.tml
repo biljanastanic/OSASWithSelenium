@@ -1,0 +1,9 @@
+<html t:type="Template" title="Dashboard"
+	xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd" xmlns:p="tapestry:parameter"
+	xmlns:j="tapestry-library:jquery">
+
+	<div class="content">
+		<center><img src="${context:template/images/logo.png}" alt="Logo" /></center>
+	</div>
+
+</html>

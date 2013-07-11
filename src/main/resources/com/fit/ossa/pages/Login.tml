@@ -1,0 +1,74 @@
+<html title="Login" xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd">
+	<head>
+		<title>Login</title>
+		<!-- CSS -->
+		<link rel="stylesheet" href="${context:template/css/reset.css}" />
+        <link rel="stylesheet" href="${context:template/css/grid-fluid.css}" />
+        <link rel="stylesheet" href="${context:template/css/websymbols.css}" />
+        <link rel="stylesheet" href="${context:template/css/formalize.css}" />
+        <link rel="stylesheet" href="${context:template/css/esplendido.css}" />
+        <link rel="stylesheet" href="${context:template/plugins/chosen/chosen.css}" />
+        <link rel="stylesheet" href="${context:template/plugins/ui/ui-custom.css}" />
+        <link rel="stylesheet" href="${context:template/plugins/tipsy/tipsy.css}" />
+        <link rel="stylesheet" href="${context:template/plugins/validationEngine/validationEngine.jquery.css}" />
+        <link rel="stylesheet" href="${context:template/plugins/elrte/css/elrte.min.css}" />
+        <link rel="stylesheet" href="${context:template/plugins/miniColors/jquery.miniColors.css}" />
+        <link rel="stylesheet" href="${context:template/plugins/fullCalendar/fullcalendar.css}" />
+        <link rel="stylesheet" href="${context:template/plugins/elfinder/css/elfinder.css}" />
+        <link rel="stylesheet" href="${context:template/plugins/shadowbox/shadowbox.css}" />
+        
+         <!-- JAVASCRIPTs -->
+         <script src="${context:template/js/jquery.js}"></script>
+        <script src="${context:template/js/esplendido.js}"></script>
+        <script src="${context:template/js/browserDetect.js}"></script>
+        <script src="${context:template/js/jquery.formalize.min.js}"></script>
+        <script src="${context:template/js/demo.js}"></script>
+        <script src="${context:template/plugins/prefixfree.min.js}"></script>
+        <script src="${context:template/plugins/jquery.uniform.min.js}"></script>
+        <script src="${context:template/plugins/chosen/chosen.jquery.min.js}"></script>
+        <script src="${context:template/plugins/ui/multiselect/js/ui.multiselect.js}"></script>
+        <script src="${context:template/plugins/ui/ui.spinner.min.js}"></script>
+        <script src="${context:template/plugins/datables/jquery.dataTables.min.js}"></script>
+        <script src="${context:template/plugins/jquery.metadata.js}"></script>
+        <script src="${context:template/plugins/sparkline.js}"></script>
+        <script src="${context:template/plugins/progressbar.js}"></script>
+        <script src="${context:template/plugins/feedback.js}"></script>
+        <script src="${context:template/plugins/tipsy/jquery.tipsy.js}"></script>
+        <script src="${context:template/plugins/jquery.maskedinput-1.3.min.js}"></script>
+        <script src="${context:template/plugins/jquery.validate.min.js}"></script>
+        <script src="${context:template/plugins/validationEngine/languages/jquery.validationEngine-en.js}"></script>
+        <script src="${context:template/plugins/validationEngine/jquery.validationEngine.js}"></script>
+        <script src="${context:template/plugins/jquery.elastic.js}"></script>
+        <script src="${context:template/plugins/elrte/elrte.min.js}"></script>
+        <script src="${context:template/plugins/miniColors/jquery.miniColors.min.js}"></script>
+        <script src="${context:template/plugins/fullCalendar/fullcalendar.min.js}"></script>
+        <script src="${context:template/plugins/elfinder/elfinder.min.js}"></script>
+        <script src="${context:template/plugins/jquery.modal.js}"></script>
+        <script src="${context:template/plugins/shadowbox/shadowbox.js}"></script>
+         
+        
+	</head>
+	<body>
+		<div id="login" class="single">
+			<header>
+				<center><img src="${context:template/images/3.png}" alt="Logo" /></center>
+			</header>
+			<section class="content">
+				<form t:type="form" class="validate-engine" t:id="loginForm" name="login-form">
+					<div class="fieldset black-widget">
+						<label>
+							<span class="icon" data-icon="user"></span>
+							<input t:type="textfield" t:id="username"  placeholder="Login" data-validation-engine="validate[required]"/>
+						</label>
+						<label>
+							<span class="icon" data-icon="lock"></span>
+							<input type="password" t:type="passwordfield" t:id="password" placeholder="Password" data-validation-engine="validate[required]"/>
+						</label>
+					</div>
+					
+					<input type="submit" value="Log In!" class="full-bt" />
+				</form>
+			</section>
+		</div>
+	</body>
+</html>

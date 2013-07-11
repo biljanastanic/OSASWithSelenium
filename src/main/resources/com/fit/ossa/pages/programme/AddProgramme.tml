@@ -1,0 +1,62 @@
+<html t:type="Template" title="Add Programme"
+	xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd" xmlns:p="tapestry:parameter"
+	xmlns:j="tapestry-library:jquery">
+
+	<div class="grid_9">
+		<div class="widget minimizable">
+			<t:if t:test="errorNotNull">
+				<div class="status error">
+					<p>
+						<div class="notification red">
+							<span>Error!</span>
+							${error}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<t:actionlink t:id="resetErrorLink" title="Close">Close
+							</t:actionlink>
+						</div>
+					</p>
+				</div>
+			</t:if>
+			<t:if t:test="valueNotNull">
+				<div class="status success">
+					<p>
+						<div class="notification blue">
+							<span>Success!</span>
+							${message} &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<t:actionlink t:id="resetValueLink" title="Close">Close
+							</t:actionlink>
+						</div>
+					</p>
+				</div>
+			</t:if>
+			<header>
+				<div class="icon">
+					<span class="icon" data-icon="clipboard-task"></span>
+				</div>
+
+				<div class="title">
+					<h2>Add Programme</h2>
+				</div>
+			</header>
+			<div class="content">
+				<form t:type="form" t:id="createForm">
+					<fieldset class="set">
+						<div class="field">
+							<label>Name: </label>
+							<div class="entry">
+								<input t:type="textfield" t:id="name" value="programme.name"
+									id="textfield" />
+							</div>
+						</div>
+						<div class="field">
+							<div class="entry">
+								<input type="submit" value="Submit" class="bt orange" />
+							</div>
+						</div>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+</html>

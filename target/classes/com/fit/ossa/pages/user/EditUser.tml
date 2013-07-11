@@ -1,0 +1,28 @@
+<html t:type="Template" title="Edit User"
+	xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd" xmlns:p="tapestry:parameter"
+	xmlns:j="tapestry-library:jquery">
+
+
+	<div class="grid_9">
+		<div class="widget minimizable">
+			<header>
+				<div class="icon">
+					<span class="icon" data-icon="clipboard-task"></span>
+				</div>
+				<div class="title">
+					<h2>Edit User</h2>
+				</div>
+			</header>
+			<div class="content">
+				<t:beaneditform t:id="user" exclude="password" add="newPassword"
+					reorder="username, newPassword, role" submitLabel="Edit">
+					<p:newPassword>
+						<label t:type="label" t:for="newPassword" />
+						<input t:id="newPassword" type="password" t:type="passwordfield"
+							t:value="newPassword" />
+					</p:newPassword>
+				</t:beaneditform>
+			</div>
+		</div>
+	</div>
+</html>

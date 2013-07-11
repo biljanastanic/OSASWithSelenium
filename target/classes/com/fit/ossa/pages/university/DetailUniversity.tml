@@ -1,0 +1,31 @@
+<html t:type="Template" title="Detail University"
+	xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd" xmlns:p="tapestry:parameter" xmlns:j="tapestry-library:jquery">
+
+
+	<div class="grid_9">
+		<div class="widget minimizable">
+			<header>
+				<div class="icon">
+					<span class="icon" data-icon="clipboard-task"></span>
+				</div>
+				<div class="title">
+					<h2>Details</h2>
+				</div>
+			</header>
+			<div class="content">
+				<table class="table" border="1">
+					<thead>
+						<tr>
+							<th>Info</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr t:type="Loop" t:source="university" t:value="university">
+							<td>Name: ${university.name} <br/> Abbreviation: ${university.abbreviation}</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</html>
