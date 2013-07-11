@@ -3,19 +3,14 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="selenium.SeleniumTest">
+      <class name="selenium.AjaxSeleniumTest">
         <methods>
           <include name="attachScreenshotListener"/>
-          <include name="tearDown"/>
-          <include name="getSelenium"/>
-          <include name="checkForVerificationErrors"/>
           <include name="selectDefaultWindow"/>
-          <include name="testT"/>
           <include name="setUp"/>
-          <include name="setTestContext"/>
-          <include name="setUp"/>
+          <include name="testAjaxTestCase1"/>
         </methods>
-      </class> <!-- selenium.SeleniumTest -->
+      </class> <!-- selenium.AjaxSeleniumTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
